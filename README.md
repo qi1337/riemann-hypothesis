@@ -2,6 +2,8 @@
 
 [![checks](https://github.com/Deicyde/riemann-hypothesis/actions/workflows/checks.yml/badge.svg)](https://github.com/Deicyde/riemann-hypothesis/actions/workflows/checks.yml)
 
+**Branch note.** This checkout applies a naming cleanup to the upstream mirror described below. Four fields of type `UnusedSlot72` now use the name `unusedSlot72`. The record constructor supplies `True.intro` directly, so the theorem named `siegel_eisenstein_simple_pole` is redundant and has been removed. The genuine pole-bound proposition keeps its original name and statement. CI applies the [exact patch](verification/pole-placeholder.patch) to the checksum-verified archive before comparing the source trees.
+
 A [Comparator](https://github.com/leanprover/comparator) setup for the Lean formalization
 claiming a proof of the Riemann Hypothesis and of GRH for Dirichlet L-functions, announced on
 2026-11-20 at <https://alpo.ge/remark.pdf>.
@@ -18,7 +20,7 @@ Everything else we wrote is in [`verification/`](verification/NOTES.md).
 
 | Check | Result |
 |---|---|
-| Source is identical to the published tarball | pass (CI) |
+| Source matches the published tarball plus the branch cleanup | pending branch CI |
 | Challenge compiles against Mathlib alone | pass (CI) |
 | No `sorry`, `axiom`, `native_decide`, `unsafe`, `implemented_by` or `opaque` in the source | pass ([scan](verification/static-scan.txt)) |
 | All nine dependency pins are official upstream commits | pass ([notes](verification/NOTES.md#dependencies)) |

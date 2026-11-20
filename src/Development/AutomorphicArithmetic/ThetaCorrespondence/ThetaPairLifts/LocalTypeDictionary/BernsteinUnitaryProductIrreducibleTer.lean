@@ -61,7 +61,7 @@ structure PublishedUnitaryGroupTheorems : Prop where
   discreteSeriesCoverExists : GlobalTheory.Published.DiscreteSeriesCoverExists
   siegelWeilUnitarySchrodinger : GlobalTheory.Published.SiegelWeilUnitarySchrodinger
   siegelEisensteinContinuation : GlobalTheory.Published.SiegelEisensteinContinuation
-  siegelEisensteinSimplePole : _root_.GlobalTheory.Published.UnusedSlot72
+  unusedSlot72 : _root_.GlobalTheory.Published.UnusedSlot72
   schurOrthogonalitySquareIntegrable : GlobalTheory.Published.SchurOrthogonalitySquareIntegrable
   litN : _root_.GlobalTheory.Mem.LiteralAutomorphy.LiteratureHypotheses'
   toHypothesesX : _root_.GlobalTheory.NRows.GeometricGaloisRepCompatibility

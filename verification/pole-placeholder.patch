@@ -1,0 +1,47 @@
+--- a/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducibleBis.lean
++++ b/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducibleBis.lean
+@@ -197,3 +197,3 @@
+   gaussManinPeriods : GlobalTheory.Published.GaussManinPeriods
+-  siegelEisensteinSimplePole : _root_.GlobalTheory.Published.UnusedSlot72
++  unusedSlot72 : _root_.GlobalTheory.Published.UnusedSlot72
+   normalCompletionSt : GlobalTheory.Published.NormalCompletionSt
+--- a/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducibleTer.lean
++++ b/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducibleTer.lean
+@@ -63,3 +63,3 @@
+   siegelEisensteinContinuation : GlobalTheory.Published.SiegelEisensteinContinuation
+-  siegelEisensteinSimplePole : _root_.GlobalTheory.Published.UnusedSlot72
++  unusedSlot72 : _root_.GlobalTheory.Published.UnusedSlot72
+   schurOrthogonalitySquareIntegrable : GlobalTheory.Published.SchurOrthogonalitySquareIntegrable
+--- a/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/GeometricLemma.lean
++++ b/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/GeometricLemma.lean
+@@ -72,3 +72,3 @@
+   siegelEisensteinContinuation : GlobalTheory.Published.SiegelEisensteinContinuation
+-  siegelEisensteinSimplePole : _root_.GlobalTheory.Published.UnusedSlot72
++  unusedSlot72 : _root_.GlobalTheory.Published.UnusedSlot72
+   schurOrthogonalitySquareIntegrable : GlobalTheory.Published.SchurOrthogonalitySquareIntegrable
+--- a/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean
++++ b/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean
+@@ -73,3 +73,3 @@
+   siegelEisensteinContinuation : GlobalTheory.Published.SiegelEisensteinContinuation
+-  siegelEisensteinSimplePole : _root_.GlobalTheory.Published.UnusedSlot72
++  unusedSlot72 : _root_.GlobalTheory.Published.UnusedSlot72
+   schurOrthogonalitySquareIntegrable : GlobalTheory.Published.SchurOrthogonalitySquareIntegrable
+--- a/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean
++++ b/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean
+@@ -504,4 +504,2 @@
+   GlobalTheory.Published.serreHolomorphicSections_holds
+-theorem UpperTheory.LiteratureTheorems.siegel_eisenstein_simple_pole (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.Published.UnusedSlot72 :=
+-  trivial
+ theorem UpperTheory.LiteratureTheorems.siegel_set_unitary_of_literature (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.Published.SiegelSetUnitary :=
+@@ -717,3 +715,3 @@
+   siegelEisensteinContinuation := (_root_.UpperTheory.LiteratureTheorems.siegel_eisenstein_continuation_of_literature O)
+-  siegelEisensteinSimplePole := (_root_.UpperTheory.LiteratureTheorems.siegel_eisenstein_simple_pole O)
++  unusedSlot72 := True.intro
+   schurOrthogonalitySquareIntegrable := (_root_.UpperTheory.LiteratureTheorems.schur_orthogonality_square_integrable_of_literature O)
+--- a/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean
++++ b/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean
+@@ -51,3 +51,3 @@
+     P.weilSiegelFormulaUnitary P.siegelWeilUnitarySchrodinger P.siegelEisensteinContinuation
+-    P.siegelEisensteinSimplePole P.unramifiedDoublingGL P.bernsteinZelevinskyFiniteness
++    P.unusedSlot72 P.unramifiedDoublingGL P.bernsteinZelevinskyFiniteness
+     P.schurOrthogonalitySquareIntegrable hR

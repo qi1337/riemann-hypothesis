@@ -49,7 +49,7 @@ theorem member_bundles_large_unramified_exponents_alt : _root_.GlobalTheory.Fc.S
     P.zelevinskyPolynomialRing, P.geometricLemma, P.greenCuspidal⟩
   have hH := _root_.GlobalTheory.T.compatibleSystem_member_rationalWeights hPM P.harishChandraModules P.discreteSeriesCover P.casselmanWallach
     P.weilSiegelFormulaUnitary P.siegelWeilUnitarySchrodinger P.siegelEisensteinContinuation
-    P.siegelEisensteinSimplePole P.unramifiedDoublingGL P.bernsteinZelevinskyFiniteness
+    P.unusedSlot72 P.unramifiedDoublingGL P.bernsteinZelevinskyFiniteness
     P.schurOrthogonalitySquareIntegrable hR
   have hW := _root_.GlobalTheory.T.compatibleSystem_weightOne_saturated hA hH
   have hM := _root_.GlobalTheory.T.member_multiplicatively_closed_alt P.harishChandraAnalyticity P.discreteSeriesClassification

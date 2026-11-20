@@ -195,7 +195,7 @@ structure PublishedTypesAtPlace : Prop where
   poitouTateNormalised : GlobalTheory.Published.PoitouTateNormalised
   genericUnlinkedGL : GlobalTheory.Published.GenericUnlinkedGL
   gaussManinPeriods : GlobalTheory.Published.GaussManinPeriods
-  siegelEisensteinSimplePole : _root_.GlobalTheory.Published.UnusedSlot72
+  unusedSlot72 : _root_.GlobalTheory.Published.UnusedSlot72
   normalCompletionSt : GlobalTheory.Published.NormalCompletionSt
   weilSiegelOneVector : GlobalTheory.Published.WeilSiegelOneVector
   weylDimensionGL : GlobalTheory.Published.WeylDimensionGL

@@ -502,8 +502,6 @@ theorem UpperTheory.LiteratureTheorems.semistable_reduction_st_of_literature (O 
   GlobalTheory.SS.semistableReductionSt
 theorem UpperTheory.LiteratureTheorems.serre_holomorphic_sections_of_literature (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.Published.SerreHolomorphicSections :=
   GlobalTheory.Published.serreHolomorphicSections_holds
-theorem UpperTheory.LiteratureTheorems.siegel_eisenstein_simple_pole (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.Published.UnusedSlot72 :=
-  trivial
 theorem UpperTheory.LiteratureTheorems.siegel_set_unitary_of_literature (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.Published.SiegelSetUnitary :=
   UpperTheory.Lit.siegelSetUnitary_of_core
 theorem UpperTheory.LiteratureTheorems.siegel_toroidal_integral_of_literature (O : _root_.UpperTheory.LiteratureTheorems.OpenLiteratureStatements) : GlobalTheory.Published.SiegelToroidalIntegral :=
@@ -715,7 +713,7 @@ theorem UpperTheory.LiteratureTheorems.published_results_eigen (O : _root_.Upper
   discreteSeriesCoverExists := (_root_.UpperTheory.LiteratureTheorems.discrete_series_cover_exists_of_literature O)
   siegelWeilUnitarySchrodinger := (_root_.UpperTheory.LiteratureTheorems.siegel_weil_unitary_schrodinger_of_literature O)
   siegelEisensteinContinuation := (_root_.UpperTheory.LiteratureTheorems.siegel_eisenstein_continuation_of_literature O)
-  siegelEisensteinSimplePole := (_root_.UpperTheory.LiteratureTheorems.siegel_eisenstein_simple_pole O)
+  unusedSlot72 := True.intro
   schurOrthogonalitySquareIntegrable := (_root_.UpperTheory.LiteratureTheorems.schur_orthogonality_square_integrable_of_literature O)
   litN := (_root_.UpperTheory.LiteratureTheorems.literature_nonexistence O)
   toHypothesesX := (_root_.UpperTheory.LiteratureTheorems.published_results_analytic O)

@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   mirror:
-    name: Source is identical to the published tarball
+    name: Source matches the published tarball plus the pole-placeholder cleanup
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,7 +25,9 @@ jobs:
           echo "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc  $T/lean.tar.gz" | sha256sum -c
           tar xzf "$T/lean.tar.gz" -C "$T"
 
-          # src/ differs only by the added Challenge.lean
+          # Apply the branch cleanup to the verified archive before comparing sources.
+          (cd "$T/lean" && git apply "$GITHUB_WORKSPACE/verification/pole-placeholder.patch")
+          # The comparison still accounts for every source file.
           d=$(diff -r "$T/lean/src" src || true); echo "$d"
           [ "$d" = "Only in src: Challenge.lean" ]
           cmp "$T/lean/lean-toolchain" lean-toolchain
