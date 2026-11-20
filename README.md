@@ -20,6 +20,14 @@ Everything else we wrote is in [`verification/`](verification/NOTES.md).
 
 The removed theorem concluded `True`. The residue argument obtains the pole bound it needs for its particular Eisenstein series from the vanishing of Laurent coefficients of order −2 and below. The general pole bound for every section is a separate proposition. [Coefficient statement](src/Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/SingularNullSets/HasLevel.lean) · [Use in the residue calculation](src/Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/ResidueVanishing/Rethread.lean)
 
+From the repository root, run the standalone check with the pinned Lean toolchain:
+
+```sh
+lean verification/PoleSlot.lean
+```
+
+Lean exits successfully and prints `'UpperTheory.LiteratureTheorems.siegel_eisenstein_simple_pole' does not depend on any axioms`. The check copies the slot definition and theorem body and generalizes the unused argument type. It verifies that the proof can be replaced by `True.intro` and that `(UnusedSlot72 → P) ↔ P` for every proposition `P`. The downstream residue analysis above is a source trace. [Runnable check](verification/PoleSlot.lean) · [Original slot definition](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/DiscreteSpectrumResidualClassification.lean#L7) · [Original theorem](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean#L505-L506)
+
 Locally, applying the patch to the original mirror reproduced all six edited Lean files byte for byte. Lean 4.33.1 also accepted the standalone conditional reduction from Dirichlet nonvanishing to RH. The six edited modules and the full submission still require compilation on this branch. [Reproduction commands and output](verification/rh-reduction.md)
 
 ## Status
