@@ -1,6 +1,6 @@
 # riemann-hypothesis
 
-[![checks](https://github.com/Deicyde/riemann-hypothesis/actions/workflows/checks.yml/badge.svg)](https://github.com/Deicyde/riemann-hypothesis/actions/workflows/checks.yml)
+[![checks](https://github.com/qi1337/riemann-hypothesis/actions/workflows/checks.yml/badge.svg?branch=eisenstein)](https://github.com/qi1337/riemann-hypothesis/actions/workflows/checks.yml?query=branch%3Aeisenstein)
 
 **Branch note.** This checkout applies a naming cleanup to the upstream mirror described below. Four fields of type `UnusedSlot72` now use the name `unusedSlot72`. The record constructor supplies `True.intro` directly, so the theorem named `siegel_eisenstein_simple_pole` is redundant and has been removed. The genuine pole-bound proposition keeps its original name and statement. CI applies the [exact patch](verification/pole-placeholder.patch) to the checksum-verified archive before comparing the source trees.
 
@@ -9,12 +9,18 @@ claiming a proof of the Riemann Hypothesis and of GRH for Dirichlet L-functions,
 2026-11-20 at <https://alpo.ge/remark.pdf>.
 
 The submission ships no challenge file that imports only Mathlib and no Comparator config.
-This repository is the submission, unmodified, plus those two files:
+The upstream mirror adds two files to the submission:
 
 - [`src/Challenge.lean`](src/Challenge.lean) imports only Mathlib and states the five theorems.
 - [`comparator.json`](comparator.json) is the Comparator config. The solution module is the submission's `Main`.
 
 Everything else we wrote is in [`verification/`](verification/NOTES.md).
+
+## Eisenstein pole check
+
+The removed theorem concluded `True`. The residue argument obtains the pole bound it needs for its particular Eisenstein series from the vanishing of Laurent coefficients of order −2 and below. The general pole bound for every section is a separate proposition. [Coefficient statement](src/Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/SingularNullSets/HasLevel.lean) · [Use in the residue calculation](src/Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/ResidueVanishing/Rethread.lean)
+
+Locally, applying the patch to the original mirror reproduced all six edited Lean files byte for byte. Lean 4.33.1 also accepted the standalone conditional reduction from Dirichlet nonvanishing to RH. The six edited modules and the full submission still require compilation on this branch. [Reproduction commands and output](verification/rh-reduction.md)
 
 ## Status
 
